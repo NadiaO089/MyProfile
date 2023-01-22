@@ -52,3 +52,12 @@
     background-color: transparent;
     border-color: transparent;
 }
+
+.background {
+  /* background-image: url('https://img.freepik.com/free-photo/green-paint-strokes-white-background_23-2147836289.jpg?w=740&t=st=1674406366~exp=1674406966~hmac=293dbe6a22b5bc45d11f2d0997255d59ee9bb563eb970fa7d273d89e9fabe7b5');
+  background-color: #DEFFF2;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  background: rgb(70,79,81);
+  background: linear-gradient(0deg, rgba(70,79,81,1) 0%, rgba(213,0,113,1) 7%, rgba(15,244,198,1) 12%, rgba(121,250,221,1) 30%, rgba(222,255,242,1) 100%);
+}

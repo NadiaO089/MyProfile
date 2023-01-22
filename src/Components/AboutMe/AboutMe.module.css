@@ -1,0 +1,30 @@
+.container {
+    padding-top: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.textContainer {
+    width: 50%;
+    margin: 2em;
+
+}
+
+.img {
+    border-radius: 2em;
+    padding: 1em;
+    border: 0.3em solid #464F51;
+    box-shadow: rgb(15, 244, 198, 0.5) 0px 2px 8px 0px;
+    margin: 2em;
+}
+

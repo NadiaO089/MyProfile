@@ -72,7 +72,7 @@ class Section extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className={s.background}>
           <nav className={s.navbar}>
             <div className={s.container}>
               <img className={s.logo} src={Logo} alt='Nadia Olivera Full Stack Developer'/>
