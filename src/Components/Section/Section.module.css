@@ -18,10 +18,11 @@
 .linkdiv {
     display: flex;
     flex-direction: row;
+    text-decoration: none;
 
 }
 .link {
-  text-decoration: none;
+  list-style:none;
   color: #DEFFF2;
   padding: 1em;
 }
@@ -30,15 +31,31 @@
    color:#0FF4C6;
 }
 
+.inactive .link {
+  text-decoration: none;
+  color: #DEFFF2;
+  padding: 1em;
+}
+
+.activeLink{
+  text-decoration: none;
+  color: #0FF4C6;
+  padding: 1em;
+}
+
 .contact {
-    text-decoration: none;
-    color:#0FF4C6;
-    padding: 1em;
+    list-style:none;
+    border-radius: 0.2em;
+    background-color: #D50071;
+    color: #DEFFF2;
+    padding: 0.8em;
+    margin: 0 1em 0 1em;
     
   }
   
   .contact:hover {
-    color: #D50071;
+    color: #0FF4C6;
+    background-color: #000009;
   }
 .logo {
 
@@ -60,4 +77,21 @@
   background-repeat: no-repeat; */
   background: rgb(70,79,81);
   background: linear-gradient(0deg, rgba(70,79,81,1) 0%, rgba(213,0,113,1) 7%, rgba(15,244,198,1) 12%, rgba(121,250,221,1) 30%, rgba(222,255,242,1) 100%);
+}
+
+.button {
+  background-image: url('https://cdn-icons-png.flaticon.com/128/3838/3838691.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 3em;
+  height: 3em;
+
+  background-color: transparent;
+  border: none;
+
+  position: fixed;
+margin-top: 40em;
+margin-left: -60em;
 }

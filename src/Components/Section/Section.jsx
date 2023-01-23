@@ -8,10 +8,10 @@ import ContactForm from '../ContactForm/ContactForm';
 import Logo from '../../images/MiLogo.jpg';
 import s from './Section.module.css';
 
-const styles = {
-  fontFamily: 'sans-serif',
-  textAlign: 'center',
-};
+// const styles = {
+//   fontFamily: 'sans-serif',
+//   textAlign: 'center',
+// };
 
 class Section extends React.Component {
 
@@ -78,12 +78,12 @@ class Section extends React.Component {
               <img className={s.logo} src={Logo} alt='Nadia Olivera Full Stack Developer'/>
               <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul className={s.linkdiv}>
-                  <li className={s.link}><Link activeClass="active" className="welcome" to="welcome" spy={true} smooth={true} duration={500} >Bienvenidos!</Link></li>
-                  <li className={s.link}><Link activeClass="active" className="aboutme" to="aboutme" spy={true} smooth={true} duration={500}>Sobre mí</Link></li>
+                  <li list-style='none' className={s.link}><Link activeClass="active" className="welcome" to="welcome" spy={true} smooth={true} duration={500} >Bienvenidos!</Link></li>
+                  <li className={s.link}><Link activeClass="active" className="aboutme" to="aboutme" spy={true} smooth={true} duration={500} >Sobre mí</Link></li>
                   <li className={s.link}><Link activeClass="active" className="skills" to="skills" spy={true} smooth={true} duration={500} >Skills</Link></li>
                   <li className={s.link}><Link activeClass="active" className="proyects" to="proyects" spy={true} smooth={true} duration={500}>Proyectos</Link></li>
                   <li className={s.contact}><Link activeClass="active" className="contactform" to="contactform" spy={true} smooth={true} duration={500}>Contáctame</Link></li>
-                 
+                  <input type='button' className={s.button} onClick={this.scrollToTop}/>
                 
                   
                 </ul>
@@ -93,25 +93,30 @@ class Section extends React.Component {
 
           <Element name="welcome" className="element" >
            <Welcome />
+
         </Element>
 
           <Element name="aboutme" className="element">
            <AboutMe />
+
         </Element>
 
           <Element name="skills" className="element">
+
             <Skills />
         </Element>
 
           <Element name="proyects" className="element">
+
             <Proyects />
         </Element>
 
           <Element name="contactform" className="element">
+
             <ContactForm />
         </Element>
 
-        <a onClick={this.scrollToTop}>To the top!</a>
+
         
           <Element name="test7" className="element" id="containerElement" style={{
             position: 'relative',
